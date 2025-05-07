@@ -1,30 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cabide Laranja</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cabide Laranja - Brechó Online</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="logo.png" />
 </head>
 <body>
     <header>
-        <h1>Cabide Laranja</h1>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo Cabide Laranja" class="logo" />
+        </div>
         <nav>
-            <a href="https://instagram.com">Instagram</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
         </nav>
     </header>
     <main>
-        <section class="intro">
-            <h2>Bem-vinda ao Cabide Laranja</h2>
-            <p>Peças selecionadas de marcas como FARM, com muito estilo e consciência!</p>
-        </section>
-        <section class="produtos">
-            <h2>Novidades do brechó</h2>
-            <div class="produto">
-                <img src="vestido-farm.jpg" alt="Vestido FARM">
-                <h3>Vestido FARM</h3>
-                <p>Tamanho P - R$ 89,00</p>
+        <section id="produtos">
+            <h2>Novidades</h2>
+            <div class="carrossel">
+                <div class="produto">
+                    <img src="produto1.jpg" alt="Produto 1" />
+                    <p>Vestido FARM - R$ 89,00</p>
+                </div>
+                <div class="produto">
+                    <img src="produto2.jpg" alt="Produto 2" />
+                    <p>Blusa Zara - R$ 59,00</p>
+                </div>
+                <div class="produto">
+                    <img src="produto3.jpg" alt="Produto 3" />
+                    <p>Saia Laranja - R$ 49,00</p>
+                </div>
             </div>
+        </section>
+        <section id="sobre">
+            <h2>Sobre nós</h2>
+            <p>Cabide Laranja é um brechó online com peças de qualidade, cuidadosamente escolhidas para quem ama moda e consciência ambiental.</p>
+        </section>
+        <section id="contato">
+            <h2>Entre em contato</h2>
+            <form action="mailto:contato@cabide.com" method="post" enctype="text/plain">
+                <input type="text" name="nome" placeholder="Seu nome" required />
+                <input type="email" name="email" placeholder="Seu e-mail" required />
+                <textarea name="mensagem" placeholder="Sua mensagem..." required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
     <footer>
